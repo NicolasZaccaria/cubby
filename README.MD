@@ -10,6 +10,4 @@
 
 ### Getting Started
 - Click [here](https://sapienzainteractivegraphicscourse.github.io/final-project-cubby/) to play
-- Click [here](https://github.com/SapienzaInteractiveGraphicsCourse/final-project-cubby/blob/master/Relation.pdf) to read the documentation 
-
-
+- Click [here](https://github.com/NicolasZaccaria/cubby/blob/main/Relation.pdf) to read the documentation 
