@@ -1,5 +1,7 @@
 # CUBBY
-![CUBBY](images/logo.png)
+<div align="center">
+  <img src="./images/logo.png">
+</div>
 
 ## About
 *Final project for the `Interactive Graphics` course*
