@@ -7,8 +7,8 @@
 *Final project for the `Interactive Graphics` course*
 
 ### Authors
-- ***Lorenzo Papa 1699806***
-- ***Nicolas Zaccaria 1904366***
+- ***Nicolas Zaccaria***
+- ***Lorenzo Papa***
 
 ### Getting Started
 - Click [here](https://nicolaszaccaria.github.io/cubby/) to play
