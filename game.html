@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		canvas {
+			display: block;
+		}	
+		.logo{
+            width: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;  
+			-webkit-animation-name: spinner; 
+			-webkit-animation-timing-function: linear; 
+			-webkit-animation-iteration-count: infinite; 
+			-webkit-animation-duration: 2s; 
+			animation-name: spinner; 
+			animation-timing-function: linear; 
+			animation-iteration-count: infinite; 
+			animation-duration: 2s; 
+			-webkit-transform-style: preserve-3d; 
+			-moz-transform-style: preserve-3d; 
+			transform-style: preserve-3d;
+		}
+		#loading {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			font-size: xx-large;
+			font-weight: bold;
+			font-family: sans-serif;
+			color: white;
+			background-image: url("./images/background_image.png");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+		}
+		#loading>div>div {
+			padding: 2px;
+		
+		}
+		@-webkit-keyframes spinner { 
+			from 
+			{ 
+				-webkit-transform: rotateY(0deg); 
+			} 
+			to { 
+				-webkit-transform: rotateY(-360deg); 
+			} 
+		}
+		@keyframes spinner { 
+			from { 
+				-moz-transform: rotateY(0deg); 
+				transform: rotateY(0deg); 
+			} 
+			to 
+			{ 
+				-moz-transform: rotateY(-360deg); 
+				transform: rotateY(-360deg); 
+			} 
+		}
+		#help, #tips, #commands, #endgame {
+			position: fixed;
+			display: none;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(0,0,0,0.7);
+			z-index: 2;
+			cursor: pointer;
+		}
+		#text{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: x-large;
+			font-family: 'Times New Roman', Times, serif;
+			color: white;
+			transform: translate(-50%,-50%);
+			-ms-transform: translate(-50%,-50%);
+		}
+		h4{
+			font-style: italic;
+		}
+		#hints {
+			display: none;
+			font-family: 'Times New Roman', Times, serif;
+			font-size: large; 
+			font-weight: bold;
+			color: white;
+			height: auto;
+			width: auto;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			margin-top: 40vh;
+			margin-left: -0.5vw;
+			background-color: transparent;
+			overflow-x: hidden;
+		}
+		
+	</style>
+	
+	<script type="module" src="game.js"></script>
+	<script>
+		function helpOff() {
+			document.getElementById("help").style.display = "none";
+			document.getElementById("tips").style.display = "block";
+		};
+		function tipsOff() {
+			document.getElementById("tips").style.display = "none";
+		}
+		function commandsOff() {
+			document.getElementById("commands").style.display = "none";
+		}
+		function endGame() {
+			document.getElementById("endgame").style.display = "none";
+			window.location.href = "index.html";
+		}
+	</script>
+	
+
+	<head>
+		<title>Final Project</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="icon" type="image/png" sizes="96x96" href="./images/favicon.png">
+	</head>
+	
+	<body>
+		<canvas id="canvas"></canvas>
+		<div id="loading">
+			<div>
+				<img class="logo" src="./images/head.svg" alt="play">
+			</div>
+		</div>
+		<div id="help" onclick="helpOff()">
+			<div id="text">
+				<center>
+				<h1>Find the missing parts of the Starship</h1>
+				<hr>
+				<h4>The Robot crashed with his Starship.<br>Few parts of the vehicle flew away with the impact and it seems that somebody saw the accident and tried to hide the components they found
+					<p></p> Help the Robot in finding those parts and in reparing his Starship so he can resume his travel</h4>
+				<h5>1/2</h5>
+			</center>
+			</div>
+		</div>
+		<div id="tips" onclick="tipsOff()">
+			<div id="text">
+				<center>
+				<h1>Remember</h1>
+				<hr>
+				<h4>it is possible to play with the scene and with the Robot but some object interactions required the Robot to be near to that object. When he is close enough, and the interaction is available, 
+					they will start to blink</h4>
+				<h5>2/2</h5>
+			</center>
+			</div>
+		</div>
+		<div id="hints">
+			<ul>
+				<li>Find the wheel of the Starship</li>
+				<li>Find the propeller of the Starship</li>
+				<li>Once repaired, get into the Starship</li>
+				<li>Trasform to take seat in the Starship</li>
+			</ul>
+		</div>
+		<img id="commands" src="./images/menu_hud.svg" onclick="commandsOff()">
+		<div id="endgame" onclick="endGame()">
+			<div id="text">
+				<center>
+				<h1>Mission Completed!</h1>
+				<hr>
+			</center>
+			</div>
+		</div>
+	</body>
+</html>
+

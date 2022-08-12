@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <style>
+        body  {
+            display: block;
+            background-image: url('./images/background_image.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            background-color: #B3DAF5;
+        }
+        .hud  {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            width: 14%;
+            position: absolute;
+            left: 50%;
+            top: 49.5%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            outline: none;
+            transition: 1s ease-in-out;
+            font-size: x-large;
+            color: white;
+            text-decoration: none;
+            border-radius: 50%;
+        }
+
+        .btn:hover {
+            transition: 0.5s ease-in-out;
+            background-color: rgba(250, 150, 68, 0.45);
+        }
+        .btn:focus{
+            -webkit-animation-name: spinner; 
+			-webkit-animation-timing-function: linear; 
+			-webkit-animation-iteration-count: 4; 
+			-webkit-animation-duration: 0.5s; 
+			animation-name: spinner; 
+			animation-timing-function: linear; 
+			animation-iteration-count: 4; 
+			animation-duration: 0.5s; 
+			-moz-transform-style: preserve-3d; 
+			transform-style: preserve-3d;
+        }
+        .logo{
+            width: 70%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @-webkit-keyframes spinner { 
+            from 
+            { 
+                -webkit-transform: rotateY(0deg); 
+            } 
+            to { 
+                -webkit-transform: rotateY(-360deg); 
+            } 
+        }
+        @keyframes spinner { 
+			from { 
+				-moz-transform: rotateY(0deg); 
+				transform: rotateY(0deg); 
+			} 
+			to 
+			{ 
+				-moz-transform: rotateY(-360deg); 
+				transform: rotateY(-360deg); 
+			} 
+		}
+    </style>
+
+    <script type="text/javascript">
+        function loadGame(){
+            location.href = "game.html";
+        }
+        function pulse(){ document.getElementById("btn").style.width = "80px"; }
+    </script>
+
+    <head>
+		<title>Final Project</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="icon" type="image/png" sizes="96x96" href="./images/favicon.png">
+    </head>
+    
+    <body>
+        <img class="hud" src="./images/menu_hud.svg" alt="hud">
+        <div class="container">
+            <div class="center">
+                <audio id="sound" src="./sounds/start.wav" preload="auto" onended="loadGame()"></audio>
+                <button class="btn" onclick="document.getElementById('sound').play();">
+                    <img class="logo" src="./images/head.svg" alt="play"> START
+                </button>
+            </div>
+        </div>
+
+    </body>
+
+</html>

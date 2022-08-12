@@ -1,0 +1,387 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.1.46",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                7
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Light",
+            "rotation" : [
+                0.16907575726509094,
+                0.7558803558349609,
+                -0.27217137813568115,
+                0.570947527885437
+            ],
+            "translation" : [
+                4.076245307922363,
+                5.903861999511719,
+                -1.0054539442062378
+            ]
+        },
+        {
+            "name" : "Camera",
+            "rotation" : [
+                0.483536034822464,
+                0.33687159419059753,
+                -0.20870360732078552,
+                0.7804827094078064
+            ],
+            "translation" : [
+                7.358891487121582,
+                4.958309173583984,
+                6.925790786743164
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Object_13",
+            "rotation" : [
+                0,
+                0.34691283106803894,
+                0,
+                0.9378973841667175
+            ],
+            "translation" : [
+                15.691530227661133,
+                3.4020941257476807,
+                -61.29326629638672
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "Object_25",
+            "rotation" : [
+                0,
+                0.34691283106803894,
+                0,
+                0.9378973841667175
+            ],
+            "translation" : [
+                17.715280532836914,
+                8.089131355285645,
+                -61.16068649291992
+            ]
+        },
+        {
+            "mesh" : 2,
+            "name" : "Object_6",
+            "rotation" : [
+                0,
+                0.34691283106803894,
+                0,
+                0.9378973841667175
+            ],
+            "translation" : [
+                21.333297729492188,
+                8.154667854309082,
+                -61.1930046081543
+            ]
+        },
+        {
+            "children" : [
+                2,
+                3,
+                4
+            ],
+            "name" : "Low Poly Farm By Edwin3D.3ds"
+        },
+        {
+            "children" : [
+                5
+            ],
+            "name" : "RootNode (model correction matrix)"
+        },
+        {
+            "children" : [
+                6
+            ],
+            "name" : "RootNode (gltf orientation matrix)"
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "Material.001",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.10702313482761383,
+                    0.10702311247587204,
+                    0.10702311992645264,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        },
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "Material.002",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.7991033792495728,
+                    0.05448015779256821,
+                    0.059511274099349976,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        },
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "Material.003",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.3864296078681946,
+                    0.3864295184612274,
+                    0.3864295482635498,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Mesh_10",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "COLOR_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Mesh_22",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "COLOR_0" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 1
+                }
+            ]
+        },
+        {
+            "name" : "Mesh_3",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 8,
+                        "NORMAL" : 9,
+                        "COLOR_0" : 10
+                    },
+                    "indices" : 11,
+                    "material" : 2
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 4294,
+            "max" : [
+                10.76329231262207,
+                7.04304313659668,
+                10.7574462890625
+            ],
+            "min" : [
+                -12.626970291137695,
+                -5.192498207092285,
+                -12.621864318847656
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 4294,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 4294,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 4296,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 1646,
+            "max" : [
+                11.229867935180664,
+                9.503619194030762,
+                11.242904663085938
+            ],
+            "min" : [
+                -15.161110877990723,
+                -7.8811187744140625,
+                -15.127117156982422
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 1646,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 1646,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 1662,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5126,
+            "count" : 3376,
+            "max" : [
+                9.137035369873047,
+                9.438082695007324,
+                9.594146728515625
+            ],
+            "min" : [
+                -17.75276756286621,
+                -6.4427080154418945,
+                -17.280548095703125
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 9,
+            "componentType" : 5126,
+            "count" : 3376,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 10,
+            "componentType" : 5126,
+            "count" : 3376,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 11,
+            "componentType" : 5123,
+            "count" : 3402,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 51528,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 51528,
+            "byteOffset" : 51528
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 68704,
+            "byteOffset" : 103056
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 8592,
+            "byteOffset" : 171760
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 19752,
+            "byteOffset" : 180352
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 19752,
+            "byteOffset" : 200104
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 26336,
+            "byteOffset" : 219856
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3324,
+            "byteOffset" : 246192
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 40512,
+            "byteOffset" : 249516
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 40512,
+            "byteOffset" : 290028
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 54016,
+            "byteOffset" : 330540
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 6804,
+            "byteOffset" : 384556
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 391360,
+            "uri" : "tractor.bin"
+        }
+    ]
+}
